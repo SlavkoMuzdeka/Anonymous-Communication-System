@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "methods": ["POST"],
+      "pattern": "/auth/login",
+      "roles": []
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/auth/logout",
+      "roles": ["USER"]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/auth/logged-users",
+      "roles": ["USER"]
+    },
+    {
+      "methods": ["GET", "POST"],
+      "pattern": "/messaging-system/**",
+      "roles": []
+    }
+  ]
+}
